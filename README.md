@@ -32,4 +32,5 @@ spec:
 
 ```
 
-
+## Important
+![important](https://github.com/rafamqrs/parse-logging-ocp/blob/master/important.png)

@@ -1,5 +1,5 @@
 # Parsing json logging with Openshift Cluster Logging
-This sample project contains a rest api with a json responde and a simple log sysout.
+This sample project contains a rest api with a json response and a simple sysout json log.
 
 The base of the project is to show how to set up the ClusterLogForwader to parse the log json message into the structured fields. 
 

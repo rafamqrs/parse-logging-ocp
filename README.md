@@ -31,6 +31,9 @@ spec:
     parse: json
 
 ```
+## Kibana Structured field
+![important](https://github.com/rafamqrs/parse-logging-ocp/blob/master/kibana-view.png)
+
 ## Samples
 ![samples](https://github.com/rafamqrs/parse-logging-ocp/blob/master/parse-samples.png)
 

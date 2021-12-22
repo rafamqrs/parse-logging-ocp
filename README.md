@@ -31,6 +31,11 @@ spec:
     parse: json
 
 ```
+## Samples
+![samples](https://github.com/rafamqrs/parse-logging-ocp/blob/master/parse-samples.png)
 
 ## Important
 ![important](https://github.com/rafamqrs/parse-logging-ocp/blob/master/important.png)
+
+
+

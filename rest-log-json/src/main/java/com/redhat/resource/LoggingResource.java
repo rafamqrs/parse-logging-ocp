@@ -9,9 +9,9 @@ import javax.ws.rs.core.MediaType;
 public class LoggingResource {
 
     @GET
-    @Produces(MediaType.TEXT_PLAIN)
+    @Produces(MediaType.APPLICATION_JSON)
     public String userInfoLog() {
-        System.out.println("{name: 'User1', age: 33, city: 'Rio de Janeiro', country: 'Brazil', marital_status: 'married'}");
-        return "Hello RESTEasy";
+        System.out.println("{\"name\": \"User1\", \"age\": \"33\", \"city\": \"Rio de Janeiro\", \"country\": \"Brazil\", \"marital_status\": \"married\"}");
+        return "{\"name\": \"User1\", \"age\": \"33\", \"city\": \"Rio de Janeiro\", \"country\": \"Brazil\", \"marital_status\": \"married\"}";
     }
 }

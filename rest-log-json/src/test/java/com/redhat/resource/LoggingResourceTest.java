@@ -15,7 +15,7 @@ public class LoggingResourceTest {
           .when().get("/logging")
           .then()
              .statusCode(200)
-             .body(is("Hello RESTEasy"));
+             .body(is("{\"name\": \"User1\", \"age\": \"33\", \"city\": \"Rio de Janeiro\", \"country\": \"Brazil\", \"marital_status\": \"married\"}"));
     }
 
 }

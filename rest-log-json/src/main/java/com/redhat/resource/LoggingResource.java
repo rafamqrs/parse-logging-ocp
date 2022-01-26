@@ -10,8 +10,9 @@ public class LoggingResource {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public String userInfoLog() {
-        System.out.println("{\"name\": \"User1\", \"age\": \"33\", \"city\": \"Rio de Janeiro\", \"country\": \"Brazil\", \"marital_status\": \"married\"}");
-        return "{\"name\": \"User1\", \"age\": \"33\", \"city\": \"Rio de Janeiro\", \"country\": \"Brazil\", \"marital_status\": \"married\"}";
+    public String userInfoLog() throws Exception {
+        throw new Exception("Generating a error.....");
+        // System.out.println("{\"name\": \"User1\", \"age\": \"33\", \"city\": \"Rio de Janeiro\", \"country\": \"Brazil\", \"marital_status\": \"married\"}");
+        // return "{\"name\": \"User1\", \"age\": \"33\", \"city\": \"Rio de Janeiro\", \"country\": \"Brazil\", \"marital_status\": \"married\"}";
     }
 }

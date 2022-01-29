@@ -42,3 +42,29 @@ spec:
 
 
 
+# Multiline Error Openshift Cluster Logging
+Sometimes you wish the stack traces be sent to ElasticSearch as a single log line, by default each line of the log is created in differents lines and stack traces are shown on multiple lines in Kibana.
+
+### Environment
+    - Red Hat OpenShift Container Platform (RHOCP) 4.8 and later
+    - Red Hat OpenShift Logging (RHOL)
+    - 5.3
+
+KCS reference: https://access.redhat.com/solutions/5507871
+
+```yaml
+apiVersion: logging.openshift.io/v1
+kind: ClusterLogForwarder
+metadata:
+  name: instance 
+  namespace: openshift-logging 
+spec:
+...
+  pipelines:
+   - name: forward-to-fluentd-secure 
+      detectMultilineErrors: true
+      inputRefs:  
+      ...
+```
+
+
